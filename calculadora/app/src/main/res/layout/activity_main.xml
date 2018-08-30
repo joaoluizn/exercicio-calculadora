@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.ufpe.cin.residencia.calculadora.MainActivity">
+    tools:context="br.ufpe.cin.if710.calculadora.MainActivity">
 
     <TextView
         android:id="@+id/text_info"
@@ -17,6 +17,8 @@
         android:layout_marginBottom="20dp"
         android:textSize="30sp" />
 
+    <!--Removi o input type pois estava bloqueando os caracteres especiais de serem escritos no campo-->
+    <!--Restringindo apenas à numeros e o ponto-->
     <EditText
         android:id="@+id/text_calc"
         android:layout_width="match_parent"
@@ -24,7 +26,6 @@
         android:layout_below="@id/text_info"
         android:enabled="false"
         android:gravity="bottom"
-        android:inputType="numberDecimal"
         android:lines="2"
         android:maxLines="2"
         android:textSize="40sp" />
